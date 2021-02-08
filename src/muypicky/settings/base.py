@@ -39,7 +39,6 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-
 # Application definition
 
 INSTALLED_APPS = [

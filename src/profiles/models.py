@@ -58,8 +58,8 @@ def post_save_user_receiver(sender, instance, created, *args, **kwargs):
 		profile, is_created = Profile.objects.get_or_create(user=instance)
 		default_user_profile = Profile.objects.get_or_create(user__id=1)[0]
 		default_user_profile.followers.add(instance)
-		profile.followers.add(default_user_profile.user)
-		profile.followers.add(2)
+		# profile.followers.add(default_user_profile.user)
+		# profile.followers.add(2)
 
 
 
